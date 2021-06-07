@@ -1,0 +1,45 @@
+{#
+/**
+ * @file
+ * Theme implementation for a 'webform' element.
+ *
+ * This is an copy of the webform.html.twig theme_wrapper which includes the
+ * 'title_prefix' and 'title_suffix' variables needed for
+ * contextual links to appear.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the webform.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_webform()
+ * @see _webform_form_after_build()
+ *
+ * @ingroup themeable
+ */
+#}
+  <div class="registration_card">
+    <div class="registration_container">
+      <div class="registration_header">
+        <h3>Available on Demand</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <input class="registration_input">{{ element.elements.first_name }}</input>
+        </div>
+        <div class="col-sm-6">
+          <input class="registration_input">{{ element.elements.last_name }}</input>
+        </div>
+      </div>
+      <input class="registration_input">{{ element.elements.email }}</input>
+      <input class="registration_input">{{ element.elements.company }}</input>
+      <input class="registration_input">{{ element.elements.phone }}</input>
+      <div class="registration_submit">
+        {{ element.actions }}
+      </div>
+    </div>
+  </div>
+
