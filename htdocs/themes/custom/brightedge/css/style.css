@@ -1,3 +1,4 @@
+/* Introduction block on main page */
 #intro {
     background: url('../images/bg.jpeg');
     background-repeat: no-repeat;
@@ -26,6 +27,8 @@
     font-size: 120%;
 }
 
+/* Introduction block on main page */
+
 .button {
     background-color: #108575;
     border: none;
@@ -39,6 +42,7 @@
     cursor: pointer;
 }
 
+/* single testimonial page */
 
 .testimonial_para_card {
     background-color: white;
@@ -60,6 +64,8 @@
     margin: 50px 50px;
 }
 
+/* single testimonial page */
+
 .user_pic {
     height: 20px;
     width: 20px;
@@ -70,6 +76,8 @@
     background-color: rgb(223, 222, 222);
     text-align: center;
 }
+
+/* Service block on main page */
 
 .servic_card {
     background-color: white;
@@ -107,6 +115,8 @@
 #servic-services {
     text-align: center;
 }
+
+/* Service block on main page */
 
 /* Header section */
 
@@ -158,6 +168,8 @@
     padding: 2px 16px;
 }
 
+/* hardcoded menu lists on footer */
+
 #footer {
     background-color: black;
     color: white;
@@ -182,14 +194,73 @@
     margin: 8px 8px;
 }
 
+/* hardcoded menu lists on footer */
+
+/* Header with menu items */
+
 .brightedge_header {
+    z-index: 2;
     position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+    color: white;
 }
 
+/*
 .brightedge_header li {
     margin: 0 0 0 0.5em;
     float: left;
+} */
+
+#brightedge_header ul {
+    -moz-column-count: 5;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 20px;
+    column-count: 5;
+    column-gap: 20px;
+    align-items: center;
+    list-style-type: none;
 }
+
+#brightedge_header ul li a:link, #brightedge_header ul li a:visited {
+    color: white;
+}
+
+/* Header with menu items */
+
+/* Footer with menu items */
+
+#brightedge_footer {
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0px;
+    position: relative;
+    top: 20vh;
+}
+
+#block-customfootermenu ul {
+    -moz-column-count: 5;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 20px;
+    column-count: 5;
+    column-gap: 20px;
+    align-items: center;
+    list-style-type: none;
+}
+
+#block-customfootermenu ul li a:link, #block-customfootermenu ul li a:visited {
+    color: white;
+}
+
+/* Footer with menu items */
+
+/* Single event page */
 
 .single-event-header-image {
     position: absolute;
@@ -203,6 +274,8 @@
 .single-event-header h1 {
     color: white;
 }
+
+/* Single event page */
 
 /* Registration Form */
 
@@ -310,13 +383,3 @@
     height: 200px;
 }
 /* Events View */
-
-#block-customfootermenu ul {
-    -moz-column-count: 5;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 5;
-    -webkit-column-gap: 20px;
-    column-count: 5;
-    column-gap: 20px;
-    align-items: center;
-}
