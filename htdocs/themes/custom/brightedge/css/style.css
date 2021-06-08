@@ -8,7 +8,6 @@
     color: white;
     text-align: center;
     padding: auto;
-    margin-top: 30px;
 }
 
 #intro-styles {
@@ -163,8 +162,8 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
   
-  /* Add some padding inside the card container */
-  .testimonial_container {
+/* Add some padding inside the card container */
+.testimonial_container {
     padding: 2px 16px;
 }
 
@@ -351,10 +350,12 @@
 }
 
 #events-header h1 {
+    margin-top: 60px;
     font-size: 220%;
 }
 
 #events-header p {
+    margin-top: 70px;
     font-size: 120%;
 }
 
@@ -383,3 +384,103 @@
     height: 200px;
 }
 /* Events View */
+
+/* Single Event */
+
+#event-main {
+    margin-bottom: 3em;
+}
+
+.event-content-resource-hero-container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+#event-content {
+    position: relative;
+}
+
+.event-hero-container {
+    position: relative;
+    height: 500px;
+}
+
+.event-hero-overlay {
+    background: #333333;
+    height: 450px;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+}
+
+.event-hero-image {
+    background-position: center center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    height: 450px;
+    width: 100%;
+}
+
+.event-hero-image img {
+    width: 100%;
+    height: 450px;
+}
+
+.event-title-container {
+    margin-top: 160px;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 140px;
+    position: absolute;
+    width: 100%;
+}
+
+.event-inner {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+.event-title {
+    color: white;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    text-align: left!important;
+}
+
+.event-title h1 {
+    font-size: 2.8em;
+    line-height: 1.3em;
+    font-weight: 300;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    font-family: inherit;
+    margin: .67em 0;
+}
+
+.event-article-wrapper article {
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.event-text-container {
+    padding-top: 1em;
+
+}
+
+.event-inner > div {
+    max-width: 720px;
+}
+
+.event-form-container {
+    position: absolute;
+    right: 10px;
+    top: 290px;
+    margin-top: 1.5em;
+}
+
+/* Single Event */

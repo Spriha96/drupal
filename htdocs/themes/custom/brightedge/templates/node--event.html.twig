@@ -92,13 +92,35 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes }}>
-    <div class="container-fluid single-event-header">
-      <div><h1>{{ content.field_event_title }}</h1></div>
-      <div class="single-event-header-image">{{ content.field_event_image }}</div>
-      <div class="single-event-body">{{ content.field_event_body }}</div>
-      <div class="single-event-form">{{ content.field_event_registration_webform }}</div>
+  
+<div{{ content_attributes }}>
+  <div id="event-main">
+    <div id="event-content" class="column event-content-resource-hero-container">
+      <div class="event-article-wrapper event-with-webform">
+        <div class="event-hero-container">
+          <div class="event-hero-overlay"></div>
+          <div class="event-hero-image" style="background: url('{{ content.field_event_image }}');"></div>
+          <div class="event-title-container">
+            <div clas="event-inner row">
+              <div class="col-xs-12 col-md-8">
+                <h1 class="event-title">{{ content.field_event_title }}</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <artcle class="clearfix">
+          <div class="event-custom-webform-page-container">
+            <div class="event-main-container row">
+              <div class="event-content-container col-xs-12 col-md-8">
+                <div class="event-text-container">{{ content.field_event_body }}</div>
+              </div>
+              <div class="event-form-container col-xs-12 col-md-4">{{ content.field_event_registration_webform }}</div>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
+</div>
 
 </article>
